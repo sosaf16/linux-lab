@@ -6,12 +6,10 @@ sudo dnf install open-vm-tools -y
 # 2. Enable the VMware tools service to start on boot, and start it right now
 sudo systemctl enable --now vmtoolsd
 
-# 3. Change the console font size to 22 instantly
-setfont latarcyrheb-sun22
 
-# 4. Make the font size change persistent across reboots
+# 3. Make the font size change persistent across reboots
 setfont sun12x22
 echo 'FONT="sun12x22"' | sudo tee /etc/vconsole.conf
 
-# 5. Print a success message at the end
+# 4. Print a success message at the end
 echo "VM Setup is complete!"
