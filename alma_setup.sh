@@ -10,7 +10,8 @@ sudo systemctl enable --now vmtoolsd
 setfont latarcyrheb-sun22
 
 # 4. Make the font size change persistent across reboots
-echo 'FONT="latarcyrheb-sun22"' | sudo tee /etc/vconsole.conf
+setfont sun12x22
+echo 'FONT="sun12x22"' | sudo tee /etc/vconsole.conf
 
 # 5. Print a success message at the end
 echo "VM Setup is complete!"
